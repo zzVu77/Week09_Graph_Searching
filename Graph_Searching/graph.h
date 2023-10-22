@@ -6,7 +6,8 @@ struct Node {
 	Node* nodes[100] = {};
 	int conns = 0;
 	char label;
-	bool status=false;
+	bool statusDFS=false;
+	bool statusBFS = false;
 
 	void connect(Node* node) {
 		if (isConnected(node) == true)
