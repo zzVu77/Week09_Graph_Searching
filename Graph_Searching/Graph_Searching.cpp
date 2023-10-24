@@ -55,11 +55,13 @@ int main()
 	Tree* tree = new Tree();
 	Node* nodes[] = { a, b, c, d, e, f, g, h, I };
 	tree->addNodes(9, nodes);
-	tree->findPathDFS(b, 'G');
-	tree->findPathBFS(b, 'G');
+	cout << "DFS:" << endl;
+	tree->findPathDFS(a, 'G');
+	cout << "BFS:" << endl;
+	tree->findPathBFS(a, 'G');
 	//tree->addNodes(9, nodes);
 	//tree->print();
 	//bool found = tree->dfs(a, 'G');
 	//cout << found << endl;
 }
-// a di
+
